@@ -61,8 +61,8 @@ class DevRoomTwo
     /**
      * Add Action to Trigger
      *
-     * @param $trigger
-     * @param $action
+     * @param string $trigger
+     * @param string $action
      */
     public function addAction($trigger, $action) {
         $triggerArray = is_array($this->_trigger) ? $this->_trigger : array();
@@ -78,7 +78,7 @@ class DevRoomTwo
     /**
      * Executing a trigger
      *
-     * @param $trigger
+     * @param string $trigger
      * @return string
      */
     public function execute($trigger) {
